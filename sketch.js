@@ -283,41 +283,41 @@ var confidence = myRec.resultConfidence;
 
 // console.log(most_recent_word + "  conficence::  " + confidence)
 if (most_recent_word.indexOf("left") !== -1) {
-//s.dir(-1, 0)
+s.dir(-1, 0)
 // console.log(dx)
 }
 else
 
 if (most_recent_word.indexOf("right") !== -1) {
-//	s.dir(1, 0)
+	s.dir(1, 0)
 	// console.log(dx)
 }
 
 
 if (most_recent_word.indexOf("up") !== -1) {
-//s.dir(0, -1)
+s.dir(0, -1)
 // console.log(dy)
 }
 else
 
 if (most_recent_word.indexOf("down") !== -1) {
-//	s.dir(0, 1)
+	s.dir(0, 1)
 	// console.log(dy)
 }
 
 
 if (most_recent_word.indexOf("stop") !== -1) {
-//pause = true;
+pause = true;
 noLoop();
 }
 else
 if (most_recent_word.indexOf("start") !== -1) {
-//	pause = false
+	pause = false
 	loop()
 }
 else
 	if (most_recent_word.indexOf("reset") !== -1) {
-//		reset()
+		reset()
 	}
 	else
 		if (most_recent_word.indexOf("reload") !== -1) {
@@ -325,13 +325,13 @@ else
 		}
 
 if (most_recent_word.indexOf("fast") !== -1) {
-//difficulty *= 1.2;
+difficulty *= 1.2;
 frameRate(10 * difficulty);
 // console.log(difficulty)
 } else
 
 if (most_recent_word.indexOf("slow") !== -1) {
-//	difficulty *= 0.8
+	difficulty *= 0.8
 	frameRate(10 * difficulty);
 	// console.log(difficulty)
 }
